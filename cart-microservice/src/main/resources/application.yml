@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8080
 spring:
   application:
     name: cart-microservice
@@ -15,8 +15,10 @@ spring:
       repositories:
         enabled: true
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5433/postgres
-    username: postgres
+    #url: jdbc:postgresql://127.0.0.1:5433/postgres
+    #username: postgres
+    url: jdbc:postgresql://yb-tserver-0.yb-tservers.yb.svc.cluster.local:5433/yugabyte
+    username: yugabyte
     password: ""
 logging:
   level:
