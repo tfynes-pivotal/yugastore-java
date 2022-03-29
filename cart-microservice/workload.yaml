@@ -11,6 +11,8 @@ spec:
   env:
   - name: "yugabyte.sql.datasource.url"
     value: "yugabyte.sql.datasource.url: jdbc:postgresql://yb-tservers.yb-demo.svc.cluster.local:5433/yugabyte"
+  - name: BP_JVM_VERSION
+    value: "16"
   source:
     git:
       ref:
