@@ -11,3 +11,7 @@ spring:
     name: checkout-microservice
 server:
   port: 8086
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI}
