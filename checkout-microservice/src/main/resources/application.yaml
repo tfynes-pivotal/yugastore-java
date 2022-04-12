@@ -1,12 +1,12 @@
 cronos:
   yugabyte:
     keyspace: cronos
-    hostname: 127.0.0.1
+    hostname: yb-tservers.yb-demo-us-east1-b.svc.cluster.local
     port: 9042
 
 spring:
-  profiles:
-    active: local
+  #profiles:
+   # active: local
   application:
     name: checkout-microservice
 server:
