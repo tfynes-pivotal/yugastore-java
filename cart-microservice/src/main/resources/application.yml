@@ -22,10 +22,10 @@ spring:
     password: ""
 logging:
   level:
-    root: trace
+    root: debug
     org.hibernate.SQL: debug
-    org.hibernate.type: trace
-    org.hibernate.type.descriptor.BasicBinder: trace
+    org.hibernate.type: debug
+    org.hibernate.type.descriptor.BasicBinder: debug
 
 eureka:
   client:
