@@ -5,15 +5,15 @@ spring:
     name: products-microservice
 
 server:
-  port: 8082
+  port: 8080
 
 logging:
   level:
     root: info
     org.springframework.wen: info
     org.hibernate.SQL: debug
-    org.hibernate.type: trace
-    org.hibernate.type.descriptor.BasicBinder: trace
+    org.hibernate.type: debug
+    org.hibernate.type.descriptor.BasicBinder: debug
 
 
 cronos:
