@@ -2,10 +2,10 @@ spring:
   application:
     name: products-microservice
 server:
-  port: 8082
+  port: 8080
 eureka:
-  instance:
-    hostname: localhost
+#  instance:
+ #   hostname: localhost
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI}
