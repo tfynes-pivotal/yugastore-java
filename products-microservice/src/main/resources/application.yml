@@ -15,6 +15,10 @@ logging:
     org.hibernate.type: debug
     org.hibernate.type.descriptor.BasicBinder: debug
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI}
 
 cronos:
   yugabyte:
