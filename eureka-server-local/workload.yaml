@@ -6,13 +6,11 @@ metadata:
     autoscaling.knative.dev/minScale: "1"
   labels:
     apps.tanzu.vmware.com/workload-type: web
-  name: cart-microservice
+  name: eureka
 spec:
   env:
-  - name: "EUREKA_URI"
-    value: "http://eureka-default.gkelabeast.tap.fynesy.com/eureka"
-  - name: "spring.datasource.url"
-    value: "jdbc:postgresql://yb-tservers.yb-demo-us-east1-b.svc.cluster.local:5433/yugabyte"
+  #- name: "yugabyte.sql.datasource.url"
+  #  value: "yugabyte.sql.datasource.url: jdbc:postgresql://yb-tservers.yb-demo.svc.cluster.local:5433/yugabyte"
   build: 
     env: 
     - name: BP_JVM_VERSION
@@ -22,4 +20,4 @@ spec:
       ref:
         branch: master
       url: https://github.com/tfynes-pivotal/yugastore-java
-    subPath: cart-microservice 
+    subPath: eureka-server-local
