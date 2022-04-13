@@ -11,8 +11,10 @@ spec:
   env:
   - name: "EUREKA_URI"
     value: "http://eureka-default.gkelabeast.tap.fynesy.com/eureka"
-  - name: "yugabyte.sql.datasource.url"
-    value: "jdbc:postgresql://yb-tservers.yb-demo-us-east1-b.svc.cluster.local:5433/yugabyte"
+  - name: "YUGABYTE_IP"
+    value: "34.138.140.119"
+  #- name: "yugabyte.sql.datasource.url"
+  #  value: "jdbc:postgresql://yb-tservers.yb-demo-us-east1-b.svc.cluster.local:5433/yugabyte"
   build: 
     env: 
     - name: BP_JVM_VERSION
