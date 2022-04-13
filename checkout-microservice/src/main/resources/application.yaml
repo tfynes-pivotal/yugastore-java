@@ -1,7 +1,7 @@
 cronos:
   yugabyte:
     keyspace: cronos
-    hostname: yb-tservers.yb-demo-us-east1-b.svc.cluster.local
+    hostname: ${YUGABYTE_IP}
     port: 9042
 
 spring:
