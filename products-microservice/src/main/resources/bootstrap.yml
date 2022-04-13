@@ -8,4 +8,4 @@ eureka:
  #   hostname: localhost
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI}
+ #     defaultZone: ${EUREKA_URI}
